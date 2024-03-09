@@ -1,0 +1,53 @@
+nav{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: aliceblue;
+    font-family: sans-serif;
+    position:fixed;
+    top:0;
+    width:100%;
+    grid-template-columns: repeat(2,auto);
+}
+nav .izquierda .logo{
+    font-size: 24px;
+    font-weight:black;
+}
+nav .izquierda .funcionesprincipales{
+   display:grid;
+   grid-template-columns: repeat(3,auto);
+   margin-right: 30px;
+}
+nav .izquierda .funcionesprincipales button{
+    background-color: aqua;
+ }
+nav .izquierda .funcionesprincipales button:hover{
+    cursor: pointer;
+    background-color: rgb(85, 180, 218);
+}
+nav .derecha .usuario{
+    font-size: 24px;
+    font-weight:black;
+}
+nav .derecha .funcionessegundarias{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    margin-right: 30px;
+}
+nav .derecha .funcionessegundarias button:hover{
+    cursor: pointer;
+    background-color: rgb(150, 40, 194);
+}
+nav .derecha .funcionessegundarias button{
+    background-color: rgba(189, 45, 158, 0.966);
+}
+/* Establece el iframe para que ocupe toda la pantalla con un margen de 150px en la parte superior */
+iframe {
+    position: fixed;
+    top: 150px; /* Margen de 150px en la parte superior */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 150px); /* Altura ajustada para excluir el margen superior */
+    border: none; /* Esto elimina el borde del iframe */
+  }
+  

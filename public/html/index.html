@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de fotografía</title>
+    <link rel="stylesheet" href="../CSS/Inicio.css">
+</head>
+
+<body>
+    <nav>
+        <section class="izquierda">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div><br>
+            <div class="funcionesprincipales">
+                <button onclick="iframe('contactanos.html')">Contáctanos</button>
+                <button onclick="iframe('portafolio.html')">Portafolio de Servicios</button>
+                <button onclick="iframe('conocenos.html')">Conócenos</button>
+            </div>
+        </section>
+        <section class="derecha">
+            <div id="usuario">
+                Usuario
+            </div><br>
+            <div class="funcionessegundarias">
+                <button onclick="iframe(historial)">historial</button>
+                <button onclick="iframe(favoritos)">favoritos</button>
+                <button onclick="iframe(carro)">carro</button>
+            </div>
+        </section>
+    </nav>
+    <iframe src="conocenos.html" id="frame"></iframe>
+    <script src="../app.js"></script>
+</body>
+
+</html>
